@@ -1,0 +1,55 @@
+body {
+  background: no-repeat url(../img/background.jpg);
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav li {
+  margin-right: 25px;
+}
+nav {
+  color: white;
+}
+button {
+  background: orange;
+  color: white;
+}
+.device-authentication {
+  color: white;
+}
+h2,
+h3 {
+  color: #7050e5;
+}
+.three-animated-numbers {
+  color: #7050e5;
+  justify-content: center;
+  display: flex;
+}
+.numbers__item {
+  flex-basis: 20%;
+}
+.what-we-do {
+}
+.what-we-do__line {
+  justify-content: center;
+  display: flex;
+}
+.what-we-do__item {
+  flex-basis: 20%;
+}
+.footer-blocks {
+  justify-content: center;
+  display: flex;
+}
+.footer-blocks__item {
+  flex-basis: 20%;
+}
+.copyright-bar {
+  text-align: center;
+}

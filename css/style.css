@@ -5,22 +5,71 @@ body {
   -o-background-size: 100%;
   background-size: 100%;
 }
-nav ul {
+header {
+  margin-top: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+nav {
+  margin-top: 50px;
+  text-transform: uppercase;
+  float: right;
+}
+ul {
   list-style-type: none;
+}
+nav ul {
   display: flex;
 }
 nav li {
   margin-right: 25px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 nav {
   color: white;
 }
 button {
   background: orange;
+  text-transform: uppercase;
   color: white;
+}
+.find-out-more {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 .device-authentication {
   color: white;
+}
+.device-authentication {
+  max-width: 560px;
+  padding-left: 80px;
+  padding-top: 140px;
+}
+.device-authentication p {
+  max-width: 460px;
+}
+.three-animated-numbers {
+  margin-top: 130px;
+  margin-bottom: 130px;
+  text-align: center;
+}
+.three-animated-numbers p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.three-animated-numbers h3 {
+  font-size: 75px;
+  margin: 20px;
+}
+.twiitterimg {
+}
+h1 {
+  font-size: 56px;
 }
 h2,
 h3 {
@@ -34,6 +83,14 @@ h3 {
 .numbers__item {
   flex-basis: 20%;
 }
+.what-we-do {
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background: #f8f8f8;
+}
+.what-we-do h2 {
+  font-size: 56px;
+}
 .what-we-do__item img {
   justify-content: center;
 }
@@ -44,13 +101,74 @@ h3 {
 .what-we-do__item {
   flex-basis: 20%;
 }
+.resources {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.product-spotlight {
+  flex-basis: 30%;
+}
+.product-spotlight h2 {
+  font-size: 40px;
+}
+.video-block {
+  flex-basis: 40%;
+}
+.ready-to-get-started {
+  background: no-repeat url(../img/footerbackgroundnotfull.jpg);
+  background-size: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ready-to-get-started h2 {
+  color: white;
+  font-size: 40px;
+}
+.ready-to-get-started > div {
+  flex: 1;
+}
 .footer-blocks {
+  background: #363636;
+  padding-top: 50px;
+  padding-bottom: 50px;
   justify-content: center;
   display: flex;
+}
+.footer-blocks h3 {
+  color: #ff8b00;
+}
+.footer-links li,
+.footer-navigation li {
+  text-transform: uppercase;
+}
+.footer-blocks li {
+  font-weight: bold;
+  color: white;
+}
+.footer-blocks ul {
+  padding: 0;
+}
+.footer-blocks a {
+  color: white;
+  text-decoration: none;
 }
 .footer-blocks__item {
   flex-basis: 20%;
 }
+footer h3 {
+  text-transform: uppercase;
+}
 .copyright-bar {
+  height: 30px;
+  color: white;
+  background: #252525;
   text-align: center;
+  text-transform: uppercase;
 }

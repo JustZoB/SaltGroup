@@ -34,7 +34,8 @@ h3 {
 .numbers__item {
   flex-basis: 20%;
 }
-.what-we-do {
+.what-we-do__item img {
+  justify-content: center;
 }
 .what-we-do__line {
   justify-content: center;

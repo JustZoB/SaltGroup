@@ -163,7 +163,7 @@ h3 {
   flex-basis: 18%;
 }
 .what-we-do__line .what-we-do__headline {
-  flex-basis: 36.6%;
+  flex-basis: 18%;
   display: flex;
   justify-content: flex-end;
 }
@@ -220,7 +220,8 @@ h3 {
   flex-basis: 40%;
 }
 .ready-to-get-started {
-  background: no-repeat url(../img/footerbackgroundnotfull.jpg);
+  background: url(../img/footerbackground.jpg);
+  background-size: 100%;
   height: 218px;
   /*padding-left: 15%;
   padding-right: 15%;*/

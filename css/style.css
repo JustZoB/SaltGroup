@@ -1,9 +1,18 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url("../fonts/ProximaNova-Regular.ttf");
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/ralewayregular.ttf");
+}
 body {
   background: no-repeat url(../img/background.jpg);
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
+  font-family: ProximaNova;
 }
 header {
   margin-top: 32px;
@@ -109,7 +118,7 @@ h3 {
 }
 .three-animated-numbers > div {
   padding: 5px;
-  flex-basis: 20%;
+  flex-basis: 18%;
 }
 .what-we-do {
   padding-top: 120px;
@@ -121,7 +130,7 @@ h3 {
   line-height: 18px;
 }
 .what-we-do h3 {
-  font-size: 20px;
+  font-size: 18px;
   /* font-size: 30px; */
   line-height: 16px;
   text-transform: uppercase;
@@ -137,7 +146,7 @@ h3 {
 }
 .what-we-do__line > div {
   padding: 5px;
-  flex-basis: 17%;
+  flex-basis: 18%;
 }
 .device__wrapper {
   height: 146px;
@@ -238,6 +247,7 @@ footer h3 {
   text-transform: uppercase;
 }
 .copyright-bar {
+  font-family: Raleway;
   height: 30px;
   padding-top: 0.1px;
   padding-bottom: 2px;

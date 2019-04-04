@@ -7,11 +7,14 @@ body {
 }
 header {
   margin-top: 32px;
-  padding-left: 15%;
-  padding-right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header > div {
+  flex-basis: 35%;
 }
 nav {
-  margin-top: 50px;
   text-transform: uppercase;
   float: right;
 }
@@ -33,25 +36,49 @@ nav {
   color: white;
 }
 button {
-  background: orange;
+  background-color: #ff8b00;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 40px 20px 40px;
   text-transform: uppercase;
   color: white;
+}
+.headsection {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.device-authentication {
+  padding: 5px;
+  color: white;
+  flex-basis: 40%;
+}
+h1 {
+  font-size: 55px;
+  line-height: 18px;
+}
+.device-authentication p {
+  max-width: 415px;
+  font-size: 16px;
+  line-height: 30px;
+  /*font-family: "Proxim Nova";*/
+}
+.twiitterimg {
+  flex-basis: 15%;
+  padding: 5px;
 }
 .find-out-more {
   color: white;
+  font-size: 18px;
+  /* font-size: 26px;*/
+  line-height: 16px;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-}
-.device-authentication {
-  color: white;
-}
-.device-authentication {
-  max-width: 560px;
-  padding-left: 80px;
-  padding-top: 140px;
-}
-.device-authentication p {
-  max-width: 460px;
 }
 .three-animated-numbers {
   margin-top: 130px;
@@ -59,17 +86,17 @@ button {
   text-align: center;
 }
 .three-animated-numbers p {
+  font-size: 18px;
+  /* font-size: 26px;*/
   font-weight: bold;
+  line-height: 20px;
   text-transform: uppercase;
 }
 .three-animated-numbers h3 {
-  font-size: 75px;
-  margin: 20px;
+  font-size: 60px;
+  line-height: 18px;
 }
 .twiitterimg {
-}
-h1 {
-  font-size: 56px;
 }
 h2,
 h3 {
@@ -80,7 +107,8 @@ h3 {
   justify-content: center;
   display: flex;
 }
-.numbers__item {
+.three-animated-numbers > div {
+  padding: 5px;
   flex-basis: 20%;
 }
 .what-we-do {
@@ -89,16 +117,29 @@ h3 {
   background: #f8f8f8;
 }
 .what-we-do h2 {
-  font-size: 56px;
+  font-size: 60px;
+  line-height: 18px;
 }
-.what-we-do__item img {
+.what-we-do h3 {
+  font-size: 20px;
+  /* font-size: 30px; */
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.what-we-do p,
+.product-spotlight p {
+  font-size: 15px;
+  line-height: 22px;
+}
+.what-we-do__line > div img {
   justify-content: center;
 }
 .what-we-do__line {
   justify-content: center;
   display: flex;
 }
-.what-we-do__item {
+.what-we-do__line > div {
+  padding: 5px;
   flex-basis: 20%;
 }
 .resources {
@@ -109,30 +150,32 @@ h3 {
   justify-content: space-around;
 }
 .product-spotlight {
+  padding: 5px;
   flex-basis: 30%;
 }
 .product-spotlight h2 {
   font-size: 40px;
+  line-height: 18px;
 }
 .video-block {
+  padding: 5px;
   flex-basis: 40%;
 }
 .ready-to-get-started {
   background: no-repeat url(../img/footerbackgroundnotfull.jpg);
-  background-size: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
-  height: 220px;
+  height: 218px;
+  /*padding-left: 15%;
+  padding-right: 15%;*/
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .ready-to-get-started h2 {
   color: white;
   font-size: 40px;
 }
 .ready-to-get-started > div {
-  flex: 1;
+  padding: 5px;
 }
 .footer-blocks {
   background: #363636;
@@ -167,7 +210,10 @@ footer h3 {
 }
 .copyright-bar {
   height: 30px;
-  color: white;
+  font-size: 10px;
+  /*font-family: Raleway;*/
+  letter-spacing: 0.4px;
+  color: #9b9b9b;
   background: #252525;
   text-align: center;
   text-transform: uppercase;

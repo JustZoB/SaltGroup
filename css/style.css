@@ -290,14 +290,15 @@ footer {
 
 .copyright-bar {
   background: #252525;
-  height: 30px;
-  padding-top: 0.1px;
-  padding-bottom: 2px;
+  height: 31px;
+}
+.copyright-bar p {
+  margin: 0;
+  padding: 9px 0 0 0;
   color: #9b9b9b;
   text-align: center;
   font-family: Raleway;
-  line-height: 5px;
-  font-size: 15px;
+  font-size: 10px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }

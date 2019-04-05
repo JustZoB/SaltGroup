@@ -34,6 +34,7 @@ a {
 }
 button {
   background-color: #ff8b00;
+
   cursor: pointer;
   border-radius: 5px;
   border: 0;
@@ -42,6 +43,16 @@ button {
   padding: 20px 40px 20px 40px;
   text-transform: uppercase;
   color: white;
+  border: 3px #ff8b00 solid;
+}
+button:hover {
+  background-color: unset;
+  color: #ff8b00;
+}
+button:active {
+  background-color: unset;
+  color: #ff8b00;
+  transform: translateY(2px);
 }
 
 header {
@@ -149,8 +160,7 @@ h1 {
   line-height: 16px;
   text-transform: uppercase;
 }
-.resources p,
-.product-spotlight p {
+.resources p {
   font-size: 15px;
   line-height: 22px;
 }
@@ -162,7 +172,7 @@ h1 {
   padding: 5px;
   flex-basis: 18%;
 }
-.resources__line .resources__headline {
+.resources__line .resources__head {
   flex-basis: 18%;
   display: flex;
   justify-content: flex-end;
@@ -212,6 +222,10 @@ h1 {
 .product-spotlight {
   padding: 5px;
   flex-basis: 30%;
+}
+.product-spotlight p {
+  font-size: 15px;
+  line-height: 22px;
 }
 .video-block {
   padding: 5px;

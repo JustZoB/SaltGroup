@@ -34,13 +34,12 @@ a {
 }
 button {
   background-color: #ff8b00;
-
   cursor: pointer;
   border-radius: 5px;
   border: 0;
   font-size: 14px;
   font-weight: bold;
-  padding: 20px 40px 20px 40px;
+  padding: 17px 45px 17px 45px;
   text-transform: uppercase;
   color: white;
   border: 3px #ff8b00 solid;
@@ -130,6 +129,7 @@ h1 {
 }
 .services > div {
   padding: 5px;
+  min-width: 250px;
   flex-basis: 18%;
 }
 .services h2 {
@@ -235,6 +235,7 @@ h1 {
 .contuct_us {
   background: url(../img/footerbackground.jpg);
   background-size: 100%;
+  background-position-y: 40%;
   height: 218px;
   display: flex;
   align-items: center;
@@ -256,6 +257,7 @@ h1 {
 }
 .footer-blocks > div {
   flex-basis: 14%;
+  padding: 5px;
 }
 .footer-blocks h3 {
   color: #ff8b00;
@@ -276,6 +278,14 @@ h1 {
   letter-spacing: 0.7px;
   color: white;
   letter-spacing: normal;
+}
+footer {
+  position: relative;
+}
+.footerlogo {
+  position: absolute;
+  right: 33px;
+  bottom: 48px;
 }
 
 .copyright-bar {

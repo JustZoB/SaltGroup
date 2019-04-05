@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Salt</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <div>
         <a href=""><img src="img/logo.png" alt="" class="logo"/></a>
       </div>
       <div>
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contuct&nbsp;us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contuct_us">Contuct&nbsp;us</a></li>
           </ul>
         </nav>
       </div>
@@ -39,8 +40,8 @@
         </li>
       </ul>
     </div>
-    <section class="headsection">
-      <div class="device-authentication">
+    <div class="products">
+      <div class="device-authentication" id="products">
         <h1>Device&nbsp;Authentication</h1>
         <p>
           SALT Group is a world leader in authentication and security. We have a
@@ -50,35 +51,35 @@
         <button>Get started</button> <img src="" alt="" />
       </div>
       <div class="twiitterimg"><img src="img/twitter.png" alt="" /></div>
-    </section>
-    <section class="find-out-more">
-      <p>Find out more</p>
-      <img src="img/findoutmorebutton.png" alt="" />
-    </section>
-    <section class="three-animated-numbers">
-      <div>
-        <h3>126,300</h3>
+    </div>
+    <div class="find-out-more">
+      <p><a href="#services">Find out more</a></p>
+      <a href="#services"><img src="img/findoutmorebutton.png" alt=""/></a>
+    </div>
+    <div class="services">
+      <div id="services">
+        <h2>126,300</h2>
         <p>Identity Theft Cases Reported in Australia</p>
       </div>
       <div>
-        <h3>$20.1bn</h3>
+        <h2>$20.1bn</h2>
         <p>Online Transactions per annum by Australians</p>
       </div>
       <div>
-        <h3>45,511</h3>
+        <h2>45,511</h2>
         <p>Online Fraud Cases Reported in Australia</p>
       </div>
-    </section>
-    <section class="what-we-do">
-      <div class="what-we-do__line">
+    </div>
+    <div class="resources">
+      <div class="resources__line" id="resources">
         <div></div>
         <div></div>
-        <div class="what-we-do__headline">
+        <div class="resources__head">
           <h2>What&nbsp;We&nbsp;Do</h2>
           <img src="img/whatwedohead.png" alt="" width="46px" height="46px" />
         </div>
       </div>
-      <div class="what-we-do__line">
+      <div class="resources__line">
         <div>
           <div class="device__wrapper">
             <img src="img/whatwedo1.png" alt="" />
@@ -114,7 +115,7 @@
           </p>
         </div>
       </div>
-      <div class="what-we-do__line">
+      <div class="resources__line">
         <div>
           <div class="contemporary__wrapper">
             <img src="img/whatwedo4.png" alt="" />
@@ -153,8 +154,8 @@
           </p>
         </div>
       </div>
-    </section>
-    <section class="resources">
+    </div>
+    <div class="about" id="about">
       <div class="product-spotlight">
         <h2>Product&nbsp;Spotlight</h2>
         <p>
@@ -173,25 +174,25 @@
         >
           <source
             src="video/dance.ogg"
-            type="video/ogg; codecs=&quot;theora, vorbis&quot;"
+            type='video/ogg; codecs="theora, vorbis"'
           />
           <source
             src="video/dance.mp4"
-            type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
+            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
           />
           <source
             src="video/dance.webm"
-            type="video/webm; codecs=&quot;vp8, vorbis&quot;"
+            type='video/webm; codecs="vp8, vorbis"'
           />
           Тег video не поддерживается вашим браузером.
           <a href="video/dance.mp4">Скачайте видео</a>.
         </video>
       </div>
-    </section>
-    <section class="ready-to-get-started">
+    </div>
+    <div class="contuct_us" id="contuct_us">
       <div><h2>Ready to get started?</h2></div>
       <div><button>Contact us</button></div>
-    </section>
+    </div>
     <footer>
       <div class="footer-blocks">
         <div class="footer-twitter">
@@ -245,12 +246,12 @@
             <li><h3>Navigation</h3></li>
           </ul>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contuct_us">Contuct&nbsp;us</a></li>
           </ul>
         </div>
         <div class="footer-links">
@@ -258,10 +259,10 @@
             <li><h3>Links</h3></li>
           </ul>
           <ul>
-            <li><a href="">Disclamer</a></li>
-            <li><a href="">Legal</a></li>
-            <li><a href="">Environment</a></li>
-            <li><a href="">Privacy</a></li>
+            <li><a href="#">Disclamer</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Environment</a></li>
+            <li><a href="#">Privacy</a></li>
           </ul>
         </div>
         <div class="footer-contacts">

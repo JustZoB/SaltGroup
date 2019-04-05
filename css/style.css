@@ -6,11 +6,44 @@
   font-family: Raleway;
   src: url("../fonts/ralewayregular.ttf");
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: no-repeat url(../img/background.jpg);
   background-size: contain;
   font-family: ProximaNova;
 }
+h2,
+h3 {
+  color: #7050e5;
+}
+h2 {
+  font-size: 40px;
+  line-height: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+button {
+  background-color: #ff8b00;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 40px 20px 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
 header {
   margin-top: 32px;
   display: flex;
@@ -20,37 +53,14 @@ header {
 header > div {
   flex-basis: 35%;
 }
-nav {
-  text-transform: uppercase;
-  float: right;
-}
-ul {
-  list-style-type: none;
-}
+
 nav ul {
   display: flex;
 }
 nav li {
   margin-right: 25px;
 }
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
-nav {
-  color: white;
-}
-button {
-  background-color: #ff8b00;
-  border-radius: 5px;
-  border: 0;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 20px 40px 20px 40px;
-  text-transform: uppercase;
-  color: white;
-}
+
 .fixed-smooth {
   z-index: 1;
   position: fixed;
@@ -65,7 +75,8 @@ button {
 .fixed-smooth li {
   margin: 4px;
 }
-.headsection {
+
+.products {
   padding-top: 100px;
   padding-bottom: 130px;
   display: flex;
@@ -82,91 +93,81 @@ h1 {
   line-height: 18px;
 }
 .device-authentication p {
-  max-width: 415px;
+  max-width: 450px;
   font-size: 16px;
   line-height: 30px;
-  /*font-family: "Proxim Nova";*/
 }
 .twiitterimg {
   flex-basis: 15%;
   padding: 5px;
 }
+
 .find-out-more {
-  color: white;
   font-size: 18px;
   /* font-size: 26px;*/
   line-height: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
 }
-.three-animated-numbers {
+
+.services {
   padding-top: 130px;
   padding-bottom: 130px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #7050e5;
 }
-.three-animated-numbers p {
+.services > div {
+  padding: 5px;
+  flex-basis: 18%;
+}
+.services h2 {
+  font-size: 60px;
+}
+.services p {
   font-size: 18px;
   /* font-size: 26px;*/
   font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
 }
-.three-animated-numbers h3 {
-  font-size: 60px;
-  line-height: 18px;
-}
-.twiitterimg {
-}
-h2,
-h3 {
-  color: #7050e5;
-}
-.three-animated-numbers {
-  color: #7050e5;
-  justify-content: center;
-  display: flex;
-}
-.three-animated-numbers > div {
-  padding: 5px;
-  flex-basis: 18%;
-}
-.what-we-do {
+
+.resources {
   padding-top: 120px;
   padding-bottom: 90px;
   background: #f8f8f8;
 }
-.what-we-do__headline {
+.resources__head {
   display: flex;
 }
-.what-we-do h2 {
+.resources h2 {
   font-size: 60px;
-  line-height: 18px;
 }
-.what-we-do h3 {
+.resources h3 {
   font-size: 18px;
   /* font-size: 30px; */
   line-height: 16px;
   text-transform: uppercase;
 }
-.what-we-do p,
+.resources p,
 .product-spotlight p {
   font-size: 15px;
   line-height: 22px;
 }
-.what-we-do__line {
+.resources__line {
   justify-content: center;
   display: flex;
 }
-.what-we-do__line > div {
+.resources__line > div {
   padding: 5px;
   flex-basis: 18%;
 }
-.what-we-do__line .what-we-do__headline {
+.resources__line .resources__headline {
   flex-basis: 18%;
   display: flex;
   justify-content: flex-end;
 }
+
 .device__wrapper {
   height: 146px;
   margin-top: 4px;
@@ -200,7 +201,8 @@ h3 {
   margin-left: 27px;
   margin-right: 25px;
 }
-.resources {
+
+.about {
   padding-top: 100px;
   padding-bottom: 120px;
   display: flex;
@@ -211,31 +213,26 @@ h3 {
   padding: 5px;
   flex-basis: 30%;
 }
-.product-spotlight h2 {
-  font-size: 40px;
-  line-height: 18px;
-}
 .video-block {
   padding: 5px;
   flex-basis: 40%;
 }
-.ready-to-get-started {
+
+.contuct_us {
   background: url(../img/footerbackground.jpg);
   background-size: 100%;
   height: 218px;
-  /*padding-left: 15%;
-  padding-right: 15%;*/
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.ready-to-get-started h2 {
+.contuct_us h2 {
   color: white;
-  font-size: 40px;
 }
-.ready-to-get-started > div {
+.contuct_us > div {
   padding: 5px;
 }
+
 .footer-blocks {
   background: #363636;
   padding-top: 50px;
@@ -243,52 +240,40 @@ h3 {
   justify-content: space-evenly;
   display: flex;
 }
+.footer-blocks > div {
+  flex-basis: 14%;
+}
 .footer-blocks h3 {
   color: #ff8b00;
   letter-spacing: 0.56px;
   font-size: 14px;
-}
-.footer-links li,
-.footer-navigation li {
-  text-transform: uppercase;
-}
-.footer-blocks li {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.7px;
-  color: white;
-}
-.footer-blocks ul {
-  padding: 0;
-}
-.footer-blocks a {
-  color: white;
-  text-decoration: none;
-}
-.footer-blocks > div {
-  flex-basis: 14%;
-}
-.footer-blocks li {
-  letter-spacing: normal;
-}
-footer h3 {
   text-transform: uppercase;
 }
 .markerlist {
   list-style-image: url(../img/Polygon_3.png);
   margin-left: 17px;
 }
+.footer-blocks ul {
+  padding: 0;
+}
+.footer-blocks li {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: white;
+  letter-spacing: normal;
+}
+
 .copyright-bar {
-  font-family: Raleway;
+  background: #252525;
   height: 30px;
   padding-top: 0.1px;
   padding-bottom: 2px;
+  color: #9b9b9b;
+  text-align: center;
+  font-family: Raleway;
   line-height: 5px;
   font-size: 15px;
-  /*font-family: Raleway;*/
   letter-spacing: 0.4px;
-  color: #9b9b9b;
-  background: #252525;
-  text-align: center;
   text-transform: uppercase;
 }

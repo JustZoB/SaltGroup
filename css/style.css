@@ -10,8 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: no-repeat url(../img/background.jpg);
-  background-size: contain;
   font-family: ProximaNova;
 }
 h2,
@@ -36,7 +34,6 @@ button {
   background-color: #ff8b00;
   cursor: pointer;
   border-radius: 5px;
-  border: 0;
   font-size: 14px;
   font-weight: bold;
   padding: 17px 45px 17px 45px;
@@ -55,7 +52,10 @@ button:active {
 }
 
 header {
-  margin-top: 32px;
+  background: url(../img/backgroundsquare.png) center no-repeat #6149cf;
+}
+.menu {
+  padding-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -88,7 +88,7 @@ nav li {
 
 .products {
   padding-top: 100px;
-  padding-bottom: 130px;
+  padding-bottom: 54px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -113,15 +113,34 @@ h1 {
 }
 
 .find-out-more {
+  background: url(../img/backgroundtriangle.png) no-repeat;
+  background-position-x: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
   font-size: 18px;
   /* font-size: 26px;*/
   line-height: 16px;
   text-align: center;
 }
-
+#services {
+  vertical-align: bottom;
+}
+@media (max-width: 1600px) {
+  header {
+    background: url(../img/backgroundsquare.png);
+    background-size: auto;
+  }
+  .find-out-more {
+    background-position-x: center;
+    background-size: auto;
+  }
+}
+.find-out-more p {
+  margin-top: 0;
+}
 .services {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-bottom: 110px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -178,34 +197,34 @@ h1 {
   justify-content: flex-end;
 }
 
-.device__wrapper {
+.device__margin {
   height: 146px;
   margin-top: 4px;
   margin-left: 41px;
   margin-right: 85px;
 }
-.user__wrapper {
+.user__margin {
   height: 150px;
   margin-left: 53px;
   margin-right: 23px;
 }
-.transaction__wrapper {
+.transaction__margin {
   height: 150px;
   margin-left: 57px;
   margin-right: 73px;
 }
-.contemporary__wrapper {
+.contemporary__margin {
   height: 140px;
   margin-left: 56px;
   margin-right: 80px;
 }
-.solutions__wrapper {
+.solutions__margin {
   height: 131px;
   margin-top: 9px;
   margin-left: 38px;
   margin-right: 38px;
 }
-.cloud__wrapper {
+.cloud__margin {
   height: 112px;
   margin-top: 28px;
   margin-left: 27px;
@@ -213,6 +232,7 @@ h1 {
 }
 
 .about {
+  background: white;
   padding-top: 100px;
   padding-bottom: 120px;
   display: flex;
@@ -232,7 +252,7 @@ h1 {
   flex-basis: 40%;
 }
 
-.contuct_us {
+.contact_us {
   background: url(../img/footerbackground.jpg);
   background-size: 100%;
   background-position-y: 40%;
@@ -241,10 +261,10 @@ h1 {
   align-items: center;
   justify-content: space-around;
 }
-.contuct_us h2 {
+.contact_us h2 {
   color: white;
 }
-.contuct_us > div {
+.contact_us > div {
   padding: 5px;
 }
 

@@ -25,8 +25,8 @@
     </div>
     <header id="home">
       <div class="menu">
-        <div>
-          <a href=""><img src="img/logo.png" alt="Logo" class="logo"/></a>
+        <div class="logo">
+          <a href=""><img src="img/logo.png" alt="Logo"/></a>
         </div>
         <div>
           <nav>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="products">
-        <div class="device-authentication" id="products">
+        <div class="device-authentication base-flex" id="products">
           <h1>Device&nbsp;Authentication</h1>
           <p>
             SALT Group is a world leader in authentication and security. We have
@@ -51,7 +51,7 @@
           </p>
           <button>Get started</button>
         </div>
-        <div class="twiitterimg">
+        <div class="twiitter_img base-flex">
           <img src="img/twitter.png" alt="Twitter" />
         </div>
       </div>
@@ -62,25 +62,25 @@
         <img src="img/findoutmorebutton.png" alt="Down Arrow"
       /></a>
     </div>
-    <div class="services">
-      <div id="services">
+    <div class="services" id="services">
+      <div class="base-flex">
         <h2>126,300</h2>
         <p>Identity Theft Cases Reported in Australia</p>
       </div>
-      <div>
+      <div class="base-flex">
         <h2>$20.1bn</h2>
         <p>Online Transactions per annum by Australians</p>
       </div>
-      <div>
+      <div class="base-flex">
         <h2>45,511</h2>
         <p>Online Fraud Cases Reported in Australia</p>
       </div>
     </div>
     <div class="resources">
       <div class="resources__line" id="resources">
-        <div></div>
-        <div></div>
-        <div class="resources__head">
+        <div class="base-flex"></div>
+        <div class="base-flex"></div>
+        <div class="resources__head base-flex">
           <h2>What&nbsp;We&nbsp;Do</h2>
           <img
             src="img/whatwedohead.png"
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="resources__line">
-        <div>
+        <div class="base-flex">
           <div class="device__margin">
             <img src="img/whatwedo1.png" alt="The mobile" />
           </div>
@@ -103,7 +103,7 @@
             protection.
           </p>
         </div>
-        <div>
+        <div class="base-flex">
           <div class="user__margin">
             <img src="img/whatwedo2.png" alt="The tablet" />
           </div>
@@ -113,7 +113,7 @@
             biometric connected MFA security tokens.
           </p>
         </div>
-        <div>
+        <div class="base-flex">
           <div class="transaction__margin">
             <img src="img/whatwedo3.png" alt="The laptop" />
           </div>
@@ -127,7 +127,7 @@
         </div>
       </div>
       <div class="resources__line">
-        <div>
+        <div class="base-flex">
           <div class="contemporary__margin">
             <img src="img/whatwedo4.png" alt="The circle labyrinth" />
           </div>
@@ -142,7 +142,7 @@
             biometrics.
           </p>
         </div>
-        <div>
+        <div class="base-flex">
           <div class="solutions__margin">
             <img src="img/whatwedo5.png" alt="Hard Disk" />
           </div>
@@ -153,7 +153,7 @@
             code development.
           </p>
         </div>
-        <div>
+        <div class="base-flex">
           <div class="cloud__margin">
             <img src="img/whatwedo6.png" alt="Cloud" />
           </div>
@@ -177,12 +177,7 @@
         <button>MORE INFO</button>
       </div>
       <div class="video-block">
-        <video
-          src="video/dance.mp4"
-          controls="controls"
-          width="725"
-          height="408"
-        >
+        <video src="video/dance.mp4" controls>
           <source
             src="video/dance.ogv"
             type='video/ogv; codecs="theora, vorbis"'
@@ -207,52 +202,59 @@
     <footer>
       <div class="footer-blocks">
         <div class="footer-twitter">
-          <blockquote class="twitter-tweet" data-cards="hidden" data-lang="ru">
-            <p lang="en" dir="ltr">
-              Our CTO Pedram Ghovonlou (<a
-                href="https://twitter.com/PedramGhovonlou?ref_src=twsrc%5Etfw"
-                >@PedramGhovonlou</a
-              >) one of the keynote speakers at “AI in Finance 2019” conference
-              in Manila Philippines discussing Online KYC and Customer
-              Authentication to enable the Digital Future of Banking<a
-                href="https://twitter.com/hashtag/identity?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#identity</a
-              >
-              <a
-                href="https://twitter.com/hashtag/authentication?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#authentication</a
-              >
-              <a
-                href="https://twitter.com/hashtag/banking?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#banking</a
-              >
-              <a
-                href="https://twitter.com/hashtag/biometrics?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#biometrics</a
-              >
-              <a
-                href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#AI</a
-              >
-              <a
-                href="https://twitter.com/hashtag/digital?src=hash&amp;ref_src=twsrc%5Etfw"
-                >#digital</a
-              >
-              <a href="https://t.co/4GvG3UGW7a">pic.twitter.com/4GvG3UGW7a</a>
-            </p>
-            &mdash; Salt Group (@saltgroup)
-            <a
-              href="https://twitter.com/saltgroup/status/1099931134954065921?ref_src=twsrc%5Etfw"
-              >25 февраля 2019 г.</a
+          <div class="footer-twitter-wrapper">
+            <blockquote
+              class="twitter-tweet"
+              data-cards="hidden"
+              data-lang="ru"
             >
-          </blockquote>
+              <p lang="en" dir="ltr">
+                Our CTO Pedram Ghovonlou (<a
+                  href="https://twitter.com/PedramGhovonlou?ref_src=twsrc%5Etfw"
+                  >@PedramGhovonlou</a
+                >) one of the keynote speakers at “AI in Finance 2019”
+                conference in Manila Philippines discussing Online KYC and
+                Customer Authentication to enable the Digital Future of
+                Banking<a
+                  href="https://twitter.com/hashtag/identity?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#identity</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/authentication?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#authentication</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/banking?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#banking</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/biometrics?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#biometrics</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#AI</a
+                >
+                <a
+                  href="https://twitter.com/hashtag/digital?src=hash&amp;ref_src=twsrc%5Etfw"
+                  >#digital</a
+                >
+                <a href="https://t.co/4GvG3UGW7a">pic.twitter.com/4GvG3UGW7a</a>
+              </p>
+              &mdash; Salt Group (@saltgroup)
+              <a
+                href="https://twitter.com/saltgroup/status/1099931134954065921?ref_src=twsrc%5Etfw"
+                >25 февраля 2019 г.</a
+              >
+            </blockquote>
+          </div>
           <script
             async
             src="https://platform.twitter.com/widgets.js"
             charset="utf-8"
           ></script>
         </div>
-        <div class="footer-navigation">
+        <div class="footer-navigation base-flex">
           <ul class="markerlist">
             <li><h3>Navigation</h3></li>
           </ul>
@@ -265,7 +267,7 @@
             <li><a href="#contact_us">Contact&nbsp;us</a></li>
           </ul>
         </div>
-        <div class="footer-links">
+        <div class="footer-links base-flex">
           <ul class="markerlist">
             <li><h3>Links</h3></li>
           </ul>
@@ -276,7 +278,7 @@
             <li><a href="#">Privacy</a></li>
           </ul>
         </div>
-        <div class="footer-contacts">
+        <div class="footer-contacts base-flex">
           <ul class="markerlist">
             <li><h3>Contact sales</h3></li>
           </ul>

@@ -85,23 +85,25 @@ a:hover {
     display: flex;
   }
 }
-.burger-menu__link {
+.menu__nav li {
   margin-left: 30px;
 }
-.burger-menu__nav {
+.menu__nav ul {
   letter-spacing: 0.7px;
   font-size: 14px;
   line-height: 38px;
 }
-.burger-menu__button {
+.burger-menu__nav {
   display: none;
 }
 @media (max-width: 1024px) {
+  .menu__nav {
+    display: none;
+  }
   .menu {
     padding-top: 0px;
   }
   .burger-menu__button {
-    display: block;
     position: fixed;
     top: 20px;
     left: 20px;
@@ -147,6 +149,7 @@ a:hover {
     transform: rotate(-45deg);
   }
   .burger-menu__nav {
+    display: block;
     padding-top: 100px;
     position: fixed;
     z-index: 4;
@@ -353,6 +356,9 @@ h1 {
   justify-content: flex-end;
 }
 @media (max-width: 500px) {
+  .resources h2 {
+    font-size: 50px;
+  }
   .resources__line {
     flex-direction: column;
     text-align: center;
@@ -454,6 +460,11 @@ h1 {
 }
 .contact_us > div {
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .contact_us {
+    height: 200px;
+  }
 }
 
 .footer-blocks {

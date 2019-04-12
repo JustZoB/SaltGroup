@@ -9,49 +9,62 @@
     <title>Salt Group</title>
   </head>
   <body>
-    <div class="fixed-smooth">
+    <div class="scroll-menu__fixed">
       <ul>
         <li>
-          <a href="#home"><img src="img/Polygon_1.png" alt="Scroll Button"/></a>
+          <a href="#top_of_page"
+            ><img
+              src="img/scroll_button_active.png"
+              alt="Scroll Button"
+              id="scroll-button__1"
+          /></a>
         </li>
         <li>
-          <a href="#resources"
-            ><img src="img/Polygon_2.png" alt="Scroll Button"
+          <a href="#services"
+            ><img
+              src="img/scroll_button_inactive.png"
+              alt="Scroll Button"
+              id="scroll-button__2"
           /></a>
         </li>
         <li>
           <a href="#contact_us"
-            ><img src="img/Polygon_2.png" alt="Scroll Button"
+            ><img
+              src="img/scroll_button_inactive.png"
+              alt="Scroll Button"
+              id="scroll-button__3"
           /></a>
         </li>
       </ul>
     </div>
     <header>
-      <section class="page__small page__image-1" id="home">
+      <section class="page__small page__image-1" id="top_of_page">
         <div class="wrap wrap__medium">
           <div class="block-menu">
             <div class="box-menu">
               <a href="#"
                 ><img src="img/logo.png" alt="Logo" class="box-menu__logo"
               /></a>
-              <h1 class="page-title">Salt Group</h1>
+              <h1 class="page-title__hidden">Salt Group</h1>
             </div>
             <div class="box-menu">
               <nav>
                 <ul class="box-menu__list">
-                  <li class="box-menu__item"><a href="#home">Home</a></li>
-                  <li class="box-menu__item">
-                    <a href="#products">Products</a>
+                  <li class="box-menu__item box-menu__item__active">
+                    <a class="box-menu__link__active">Home</a>
                   </li>
                   <li class="box-menu__item">
-                    <a href="#services">Services</a>
+                    <a href="#">Products</a>
                   </li>
                   <li class="box-menu__item">
-                    <a href="#resources">Resources</a>
+                    <a href="#">Services</a>
                   </li>
-                  <li class="box-menu__item"><a href="#about">About</a></li>
                   <li class="box-menu__item">
-                    <a href="#contact_us">Contact&nbsp;us</a>
+                    <a href="#">Resources</a>
+                  </li>
+                  <li class="box-menu__item"><a href="#">About</a></li>
+                  <li class="box-menu__item">
+                    <a href="#">Contact us</a>
                   </li>
                 </ul>
               </nav>
@@ -63,38 +76,38 @@
             ></a>
             <nav class="burger-menu__nav">
               <ul>
-                <li class="burger-menu__link"><a href="#home">Home</a></li>
+                <li class="burger-menu__link"><a href="#">Home</a></li>
                 <li class="burger-menu__link">
-                  <a href="#products">Products</a>
+                  <a href="#">Products</a>
                 </li>
                 <li class="burger-menu__link">
-                  <a href="#services">Services</a>
+                  <a href="#">Services</a>
                 </li>
                 <li class="burger-menu__link">
-                  <a href="#resources">Resources</a>
+                  <a href="#">Resources</a>
                 </li>
-                <li class="burger-menu__link"><a href="#about">About</a></li>
+                <li class="burger-menu__link"><a href="#">About</a></li>
                 <li class="burger-menu__link">
-                  <a href="#contact_us">Contact&nbsp;us</a>
+                  <a href="#">Contact us</a>
                 </li>
               </ul>
             </nav>
             <div class="burger-menu__overlay"></div>
           </div>
-          <section class="page__large" id="products">
+          <section class="page__large" id="main_page">
             <div class="wrap wrap__small">
-              <div class="blocks-device">
-                <div class="box-device__big">
-                  <h2 class="box-device__title">Device Authentication</h2>
-                  <p class="box-device__text">
+              <div class="blocks-main-page">
+                <div class="box-main-page__big">
+                  <h2 class="box-main-page__title">Device Authentication</h2>
+                  <p class="box-main-page__text">
                     SALT Group is a world leader in authentication and security.
                     We have a range of services to improve user authentication.
                     Discover the possibilities with SALT.
                   </p>
                   <button>Get started</button>
                 </div>
-                <div class="box-device__small">
-                  <div class="box-device__wrap">
+                <div class="box-main-page__small">
+                  <div class="box-main-page__wrap">
                     <img src="img/twitter.png" alt="Twitter" />
                   </div>
                 </div>
@@ -104,20 +117,20 @@
         </div>
       </section>
     </header>
-    <div class="page__medium page__image-2">
+    <div class="page__medium page__image-2" id="find-more">
       <div class="block-find-more__wrap">
         <div class="block-find-more">
-          <a href="#services" class="block-find-more__link">
+          <a href="#numbers" class="block-find-more__link">
             <div class="block-find-more__text__wrap">
               <p class="block-find-more__text">Find out more</p>
             </div>
-            <img src="img/findoutmorebutton.png" alt="Down Arrow"
+            <img src="img/find_more.png" alt="Down Arrow"
           /></a>
         </div>
       </div>
     </div>
     <main>
-      <div class="page__large" id="services">
+      <div class="page__large" id="numbers">
         <div class="wrap wrap__small">
           <div class="blocks-numbers">
             <div class="box-numbers">
@@ -138,57 +151,57 @@
           </div>
         </div>
       </div>
-      <section class="page__large page__darkwhite" id="resources">
+      <section class="page__large page__darkwhite" id="services">
         <div class="wrap wrap__small">
-          <div class="page-header-resources">
-            <h2 class="title-resources">What&nbsp;We&nbsp;Do</h2>
+          <div class="header-services">
+            <h2 class="title-services">What We Do</h2>
             <img
-              class="title-hat-resources"
-              src="img/resources_title.png"
+              class="title-hat-services"
+              src="img/services_title.png"
               alt="Hat for title"
             />
           </div>
-          <div class="blocks-resources">
-            <div class="box-resources">
-              <div class="box-resources__device__wrap">
+          <div class="blocks-services">
+            <div class="box-services">
+              <div class="box-services__device__wrap">
                 <img
-                  class="box-resources__img"
-                  src="img/resources_1.png"
+                  class="box-services__img"
+                  src="img/services_1.png"
                   alt="The mobile"
                 />
               </div>
-              <h3 class="box-resources__title">Device Authentication</h3>
-              <p class="box-resources__text">
+              <h3 class="box-services__title">Device Authentication</h3>
+              <p class="box-services__text">
                 Hardware-based device fingerprinting resilient to cloning,
                 malware and device jailbreak/root. Hardware-level control over
                 the displayed UI independent of the device operating system.
                 Hardware-level data protection.
               </p>
             </div>
-            <div class="box-resources">
-              <div class="box-resources__user__wrap">
+            <div class="box-services">
+              <div class="box-services__user__wrap">
                 <img
-                  class="box-resources__img"
-                  src="img/resources_2.png"
+                  class="box-services__img"
+                  src="img/services_2.png"
                   alt="The tablet"
                 />
               </div>
-              <h3 class="box-resources__title">User Authentication</h3>
-              <p class="box-resources__text">
+              <h3 class="box-services__title">User Authentication</h3>
+              <p class="box-services__text">
                 Verify the identity of users for access control with
                 contemporary biometric connected MFA security tokens.
               </p>
             </div>
-            <div class="box-resources">
-              <div class="box-resources__transaction__wrap">
+            <div class="box-services">
+              <div class="box-services__transaction__wrap">
                 <img
-                  class="box-resources__img"
-                  src="img/resources_3.png"
+                  class="box-services__img"
+                  src="img/services_3.png"
                   alt="The laptop"
                 />
               </div>
-              <h3 class="box-resources__title">Transaction Authentication</h3>
-              <p class="box-resources__text">
+              <h3 class="box-services__title">Transaction Authentication</h3>
+              <p class="box-services__text">
                 High assurance out-of-band authentication of high impact
                 transactions and instructions initiated through electronic
                 service delivery channels. Audit trail of verification for
@@ -196,18 +209,18 @@
                 browser malware.
               </p>
             </div>
-            <div class="box-resources">
-              <div class="box-resources__contemporary__wrap">
+            <div class="box-services">
+              <div class="box-services__contemporary__wrap">
                 <img
-                  class="box-resources__img"
-                  src="img/resources_4.png"
+                  class="box-services__img"
+                  src="img/services_4.png"
                   alt="The circle labyrinth"
                 />
               </div>
-              <h3 class="box-resources__title">
+              <h3 class="box-services__title">
                 Contemporary authentication methods
               </h3>
-              <p class="box-resources__text">
+              <p class="box-services__text">
                 Echidna authentication server to enable adaptive risk-based
                 approach to security through a range of methods for different
                 levels of authentication assurance from SMS OTPs,
@@ -217,31 +230,31 @@
                 addition of PIN, Fingerprint and other biometrics.
               </p>
             </div>
-            <div class="box-resources">
-              <div class="box-resources__solutions__wrap">
+            <div class="box-services">
+              <div class="box-services__solutions__wrap">
                 <img
-                  class="box-resources__img"
-                  src="img/resources_5.png"
+                  class="box-services__img"
+                  src="img/services_5.png"
                   alt="Hard Disk"
                 />
               </div>
-              <h3 class="box-resources__title">HSM Solutions</h3>
-              <p class="box-resources__text">
+              <h3 class="box-services__title">HSM Solutions</h3>
+              <p class="box-services__text">
                 Reseller of Thales nShield HSMs with professional services and
                 subject matter expertise in HSMs, key ceremony procedures, and
                 SEE code development.
               </p>
             </div>
-            <div class="box-resources">
-              <div class="box-resources__cloud__wrap">
+            <div class="box-services">
+              <div class="box-services__cloud__wrap">
                 <img
-                  class="box-resources__img"
-                  src="img/resources_6.png"
+                  class="box-services__img"
+                  src="img/services_6.png"
                   alt="Cloud"
                 />
               </div>
-              <h3 class="box-resources__title">Cloud & IoT Security</h3>
-              <p class="box-resources__text">
+              <h3 class="box-services__title">Cloud & IoT Security</h3>
+              <p class="box-services__text">
                 Secure the identity and access of users, devices and Internet of
                 Things connecting into the cloud. Support cloud adoption and
                 migration of applications and data into private and public
@@ -251,13 +264,13 @@
           </div>
         </div>
       </section>
-      <section class="page__large" id="about">
+      <section class="page__large" id="spotlight">
         <div class="wrap wrap__large">
-          <div class="blocks-about">
-            <div class="box-about__small">
-              <div class="box-about__wrap">
-                <h2 class="box-about__title">Product Spotlight</h2>
-                <p class="box-about__text">
+          <div class="blocks-spotlight">
+            <div class="box-spotlight__small">
+              <div class="box-spotlight__wrap">
+                <h2 class="box-spotlight__title">Product Spotlight</h2>
+                <p class="box-spotlight__text">
                   Salt mSign Connected Token is a contemporary mobile security
                   2FA token for authentication of user identity and verification
                   of transactions independent of the delivery channel that
@@ -266,9 +279,13 @@
                 <button>More info</button>
               </div>
             </div>
-            <div class="box-about__big">
-              <div class="box-about__wrap">
-                <video class="box-about__video" src="video/dance.mp4" controls>
+            <div class="box-spotlight__big">
+              <div class="box-spotlight__wrap">
+                <video
+                  class="box-spotlight__video"
+                  src="video/dance.mp4"
+                  controls
+                >
                   <source
                     src="video/dance.ogv"
                     type='video/ogv; codecs="theora, vorbis"'
@@ -364,38 +381,38 @@
             <div class="box-footer-nav__small">
               <h2 class="box-footer-nav__title">
                 <img
-                  class="box-footer-nav__marker"
-                  src="img/Polygon_1.png"
-                  alt="Marker"
+                  class="box-footer-nav__icon"
+                  src="img/Polygon_3.png"
+                  alt="icon"
                 />Navigation
               </h2>
               <ul class="box-footer-nav__list">
                 <li class="box-footer-nav__list__item">
-                  <a href="#home">Home</a>
+                  <a class="box-footer-nab__link__active">Home</a>
                 </li>
                 <li class="box-footer-nav__list__item">
-                  <a href="#products">Products</a>
+                  <a href="#">Products</a>
                 </li>
                 <li class="box-footer-nav__list__item">
-                  <a href="#services">Services</a>
+                  <a href="#">Services</a>
                 </li>
                 <li class="box-footer-nav__list__item">
-                  <a href="#resources">Resources</a>
+                  <a href="#">Resources</a>
                 </li>
                 <li class="box-footer-nav__list__item">
-                  <a href="#about">About</a>
+                  <a href="#">About</a>
                 </li>
                 <li class="box-footer-nav__list__item">
-                  <a href="#contact_us">Contact&nbsp;us</a>
+                  <a href="#">Contact us</a>
                 </li>
               </ul>
             </div>
             <div class="box-footer-nav__small">
               <h2 class="box-footer-nav__title">
                 <img
-                  class="box-footer-nav__marker"
-                  src="img/Polygon_1.png"
-                  alt="Marker"
+                  class="box-footer-nav__icon"
+                  src="img/Polygon_3.png"
+                  alt="icon"
                 />Links
               </h2>
               <ul class="box-footer-nav__list">
@@ -416,9 +433,9 @@
             <div class="box-footer-nav__medium">
               <h2 class="box-footer-nav__title">
                 <img
-                  class="box-footer-nav__marker"
-                  src="img/Polygon_1.png"
-                  alt="Marker"
+                  class="box-footer-nav__icon"
+                  src="img/Polygon_3.png"
+                  alt="icon"
                 />Contact sales
               </h2>
               <ul class="box-footer-nav__list">
@@ -441,9 +458,9 @@
           <p class="box-copyright__text">
             &copy; Salt group
             <img
-              class="box-copyright__marker"
-              src="img/Polygon_1.png"
-              alt="Marker"
+              class="box-copyright__icon"
+              src="img/Polygon_3.png"
+              alt="icon"
             />
             all rights reserved. website by dorne creative.
           </p>
@@ -452,7 +469,8 @@
     </footer>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/burgerMenu.js"></script>
-    <script src="js/fixedMenu.js"></script>
+    <script src="js/scrollMenu.js"></script>
+    <script src="js/pagePadding.js"></script>
   </body>
 </html>
 

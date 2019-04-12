@@ -159,11 +159,15 @@ button:active {
 .page__tiny {
   padding: 10px 0;
 }
+
 .page__small {
   padding: 30px 0;
 }
 .page__medium {
   padding: 60px 0;
+}
+.page__medium__top {
+  padding-top: 60px;
 }
 .page__large {
   padding: 100px 0;

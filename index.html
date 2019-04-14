@@ -46,12 +46,15 @@
               <h1 class="page-title__hidden">Salt Group</h1>
             </div>
             <div class="box-menu" id="fixed_menu">
-              <a class="burger-menu__button"
+              <a class="burger-menu__button" id="burger-button"
                 ><span class="burger-menu__lines"></span
               ></a>
               <nav id="burger-menu">
                 <ul class="box-menu__list" id="menu__list">
-                  <li class="box-menu__item" id="home_link">
+                  <li
+                    class="box-menu__item box-menu__item__active"
+                    id="home_link"
+                  >
                     <a href="#home">Home</a>
                   </li>
                   <li class="box-menu__item" id="products_link">
@@ -74,7 +77,7 @@
               <div class="burger-menu__overlay"></div>
             </div>
           </div>
-          <section class="page__large" id="main_page">
+          <section class="page__large__top" id="main_page">
             <div class="wrap wrap__small">
               <div class="blocks-main-page">
                 <div class="box-main-page__big">
@@ -89,7 +92,7 @@
                   <button>Get started</button>
                 </div>
                 <div class="box-main-page__small">
-                  <div class="box-main-page__wrap">
+                  <div class="box-main-page__img__wrap">
                     <img src="img/twitter.png" alt="Twitter" />
                   </div>
                 </div>
@@ -113,7 +116,7 @@
     </div>
     <main>
       <div class="page__large" id="products">
-        <div class="wrap wrap__small">
+        <div class="wrap wrap__tiny">
           <div class="blocks-products">
             <div class="box-products">
               <p class="box-products__text">
@@ -134,7 +137,7 @@
         </div>
       </div>
       <section class="page__large page__darkwhite" id="services">
-        <div class="wrap wrap__small">
+        <div class="wrap wrap__tiny">
           <div class="header-services">
             <h2 class="title-services">What We Do</h2>
             <img
@@ -251,7 +254,7 @@
           <div class="blocks-about">
             <div class="box-about__small">
               <div class="box-about__wrap">
-                <h2 class="box-about__title">Product spotlight</h2>
+                <h2 class="box-about__title">Product Spotlight</h2>
                 <p class="box-about__text">
                   Salt mSign Connected Token is a contemporary mobile security
                   2FA token for authentication of user identity and verification
@@ -360,7 +363,7 @@
               <h2 class="box-footer-nav__title">
                 <img
                   class="box-footer-nav__icon"
-                  src="img/Polygon_3.png"
+                  src="img/icon.png"
                   alt="icon"
                 />Navigation
               </h2>
@@ -389,7 +392,7 @@
               <h2 class="box-footer-nav__title">
                 <img
                   class="box-footer-nav__icon"
-                  src="img/Polygon_3.png"
+                  src="img/icon.png"
                   alt="icon"
                 />Links
               </h2>
@@ -412,7 +415,7 @@
               <h2 class="box-footer-nav__title">
                 <img
                   class="box-footer-nav__icon"
-                  src="img/Polygon_3.png"
+                  src="img/icon.png"
                   alt="icon"
                 />Contact sales
               </h2>
@@ -425,30 +428,24 @@
                 </li>
               </ul>
             </div>
-            <div class="img-footer__wrap">
-              <img src="img/footerlogo.png" alt="Footer Logo" />
-            </div>
           </div>
         </div>
       </div>
       <div class="page__tiny page__black" id="copy">
         <div class="box-copyright">
           <p class="box-copyright__text">
-            &copy; Salt group
-            <img
-              class="box-copyright__icon"
-              src="img/Polygon_3.png"
-              alt="icon"
-            />
+            &copy; 2017 Salt group
+            <img class="box-copyright__icon" src="img/icon.png" alt="icon" />
             all rights reserved. website by dorne creative.
           </p>
         </div>
       </div>
+      <div class="img-footer__wrap">
+        <img src="img/footerlogo.png" alt="Footer Logo" />
+      </div>
     </footer>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/burgerMenu.js"></script>
-    <script src="js/scrollMenu.js"></script>
-    <script src="js/pagePadding.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
 

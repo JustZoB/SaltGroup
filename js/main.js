@@ -110,6 +110,7 @@ $(document).ready(function() {
     let menu = $(selector);
     let button = $("#burger-button");
     let links = menu.find(".burger-menu__item");
+    let links_2 = menu.find(".box-menu__item");
     let overlay = menu.find(".burger-menu__overlay");
 
     function toggleMenu() {
@@ -121,13 +122,25 @@ $(document).ready(function() {
         $("body").css("overflow", "visible");
       }
     }
+    function toggleMenu_links() {
+      if ($(window).width() < 560) {
+        menu.toggleClass("burger-menu_active");
+
+        if (menu.hasClass("burger-menu_active")) {
+          $("body").css("overflow", "hidden");
+        } else {
+          $("body").css("overflow", "visible");
+        }
+      }
+    }
     button.click(toggleMenu);
 
-    links.on("click", toggleMenu);
+    links.on("click", toggleMenu_links);
+    links_2.on("click", toggleMenu_links);
     overlay.on("click", toggleMenu);
   }
 
-  burgerMenu(".burger-menu");
+  burgerMenu("#fixed_menu");
 
   window.addEventListener("scroll", scrollNavigation);
   window.addEventListener("scroll", scrollMenu);
